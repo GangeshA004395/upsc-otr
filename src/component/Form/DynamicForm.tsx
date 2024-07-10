@@ -9,7 +9,7 @@ import Box from "@mui/material/Box";
 import { Label } from "@mui/icons-material";
 import { ApplicationStep } from "../common/Steps";
 
-const DynamicForm = ({ config }: any) => {
+const DynamicForm = ({ config, handleNext }: any) => {
   const [formData, setFormData] = useState<any>({});
   const [errors, setErrors] = useState<any>({});
 
@@ -150,6 +150,7 @@ const DynamicForm = ({ config }: any) => {
         variant="contained"
         color="primary"
         style={{ marginTop: "16px" }}
+        onClick={()=>handleNext()}
       >
         Submit
       </Button>

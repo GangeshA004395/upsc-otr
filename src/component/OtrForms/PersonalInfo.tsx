@@ -6,7 +6,7 @@ import formConfig from "@/app/Validation/OtrForm";
 import DynamicForm from "../Form/DynamicForm";
 
 
-const PersonalInfo = () => {
+const PersonalInfo = ({handleNext}:any) => {
   return (
     <>
         <Typography
@@ -21,7 +21,7 @@ const PersonalInfo = () => {
         >
           Personal Details
         </Typography>
-        <DynamicForm config={formConfig.candidateForm} />
+        <DynamicForm config={formConfig.candidateForm} handleNext={handleNext} />
     </>
   );
 };

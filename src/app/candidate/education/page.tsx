@@ -43,7 +43,6 @@ const EducationDetails = () => {
         <DynamicForm config={formConfig.candidateEducation} />
 
       </Grid>
-      
     </Grid>
     </Container>
   );

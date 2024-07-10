@@ -20,7 +20,7 @@ const ContactPage = () => {
     >
       <Grid container>
         <Grid xs={12} md={12} item>
-          <StepperComponent />
+          {/* <StepperComponent /> */}
         </Grid>
       </Grid>
 

@@ -19,6 +19,7 @@ import EducationDetails from '@/app/candidate/education/page'
 import ContactDetails from '../OtrForms/Contact'
 import MuiCard from './MuiCard'
 import Privew from '@/app/candidate/otrprivew/privew'
+import { ContactPage } from '@mui/icons-material'
 
 const ColorlibStepIconRoot = styled('div')<{
   ownerstate: { completed?: boolean; active?: boolean }
@@ -117,7 +118,7 @@ const StepperComponent: React.FC = () => {
       case 0:
         return <div><OtrInstruction/></div>
       case 1:
-        return <div><PersonalInfo /></div>
+        return <div><PersonalInfo handleNext={handleNext}/></div>
       case 2:
         return <div><EducationDetails/></div>
       case 3:
