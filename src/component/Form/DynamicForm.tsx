@@ -68,6 +68,7 @@ const DynamicForm = ({ config, handleNext }: any) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (validate()) {
+      handleNext()
       console.log("Form submitted:", formData);
       // Perform form submission (e.g., API call)
     }
@@ -93,7 +94,7 @@ const DynamicForm = ({ config, handleNext }: any) => {
         md={8}
         item
       >
-    <Box component="form" onSubmit={handleSubmit} noValidate>
+    <Box component="form" onSubmit={handleSubmit}  noValidate>
       <Grid container spacing={2}>
         {Object.keys(config.fields).map((fieldName, index) => {
           const field = config.fields[fieldName];
@@ -150,7 +151,7 @@ const DynamicForm = ({ config, handleNext }: any) => {
         variant="contained"
         color="primary"
         style={{ marginTop: "16px" }}
-        onClick={()=>handleNext()}
+        // onClick={()=>handleNext()}
       >
         Submit
       </Button>
