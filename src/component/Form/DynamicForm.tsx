@@ -103,6 +103,12 @@ const DynamicForm = ({ config, handleNext }: any) => {
             <Grid item xs={12} sm={6} key={index}>
               <label style={{ fontSize: "14px" }}>
                 {field.label}
+               
+              
+              </label>
+              <label style={{ fontSize: "14px", display:'block' }}>
+               
+                {field.labelh}
                 {field.validation.required ? (
                   <span style={{ color: "red" }}>*</span>
                 ) : null}
