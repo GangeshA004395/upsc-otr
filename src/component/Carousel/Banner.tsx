@@ -18,9 +18,9 @@ const coverContent = () => {
         <Card className="covertitle-mid">
           <Card className="covertitle-inner">
             <CardText className="cardtext">
-              Dr. Manoj Soni, Hon'ble Chairman, Union Public Service Commission
+              Dr. Manoj Soni, Hon&apos;ble Chairman, Union Public Service Commission
               administering the oath of office and secrecy to Dr. Dinesh Dasa on
-              his appointment as an Hon'ble Member of the Commission on
+              his appointment as an Hon&apos;ble Member of the Commission on
               29.09.2023 (FN)
             </CardText>
           </Card>
@@ -97,7 +97,7 @@ const Notification = () => {
       <div className="inner-notification">
         <div className="inner-notification">
           <div>
-            <p className="newsTitle">What's New</p>
+            <p className="newsTitle">What&apos;s New</p>
           </div>
           <div className="marquee">
             <div className="_card_content marquee-content">
@@ -137,6 +137,8 @@ const Banner = memo(() => {
     </>
   )
 })
+
+Banner.displayName="Banner";
 
 export default Banner
 

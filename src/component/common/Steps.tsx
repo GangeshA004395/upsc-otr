@@ -32,11 +32,11 @@ const P = styled("p")`
   margin-bottom: 6.5px;
 `;
 
-export const ApplicationStep = ({ title, sections, activeStep }: any) => {
-  const activeSections = sections?.[activeStep]?.columns.map(
-    ({ title }: any) => title
-  );
-
+export const ApplicationStep = ({ data }: any) => {
+  // const activeSections = sections?.[activeStep]?.columns.map(
+  //   ({ title }: any) => title
+  // );
+  console.log(data, "in step marking");
   return (
     <Card sx={{ padding: 3 }}>
       <Header>Steps for Applicants </Header>
@@ -44,41 +44,46 @@ export const ApplicationStep = ({ title, sections, activeStep }: any) => {
       <Info>Applicant can submit his/her following details:</Info>
       {/* {activeSections?.map((item:any) => ( */}
       <P>
-        <IconFormIncomplete /> Candidate's Name (As per Class 10th)
+        <IconFormIncomplete success={data.candidateName ? true : false} />{" "}
+        Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
-        <IconFormIncomplete /> Verify Candidate's Name (As per Class 10th)
+        <IconFormIncomplete success={data.verifyCandidateName ? true : false} />{" "}
+        Verify Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
-        <IconFormIncomplete /> Gender
+        <IconFormIncomplete success={data.gender ? true : false} /> Gender
       </P>
       <P>
-        <IconFormIncomplete /> Verify Gender
+        <IconFormIncomplete success={data.verifyGender ? true : false} /> Verify
+        Gender
       </P>
       <P>
-        <IconFormIncomplete /> Date of Birth
+        <IconFormIncomplete success={data.dob ? true : false} /> Date
+        of Birth
       </P>
       <P>
-        <IconFormIncomplete /> Verify Date of Birth
+        <IconFormIncomplete success={data.verifyDob ? true : false} />{" "}
+        Verify Date of Birth
       </P>
       <P>
-        <IconFormIncomplete />
+        <IconFormIncomplete success={data.fatherName ? true : false} />
         Father’s Name
       </P>
       <P>
-        <IconFormIncomplete /> Verify Father’s Name
+        <IconFormIncomplete success={data.verifyFatherName ? true : false}/> Verify Father’s Name
       </P>
       <P>
-        <IconFormIncomplete /> Mother’s Name
+        <IconFormIncomplete success={data.motherName ? true : false}/> Mother’s Name
       </P>
       <P>
-        <IconFormIncomplete /> Verify Mother’s Name
+        <IconFormIncomplete success={data.verifyMotherName ? true : false}/> Verify Mother’s Name
       </P>
       <P>
-        <IconFormIncomplete /> Minority Status
+        <IconFormIncomplete success={data.minorityStatus ? true : false}/> Minority Status
       </P>
       <P>
-        <IconFormIncomplete /> Minority option
+        <IconFormIncomplete success={data.minorityOption ? true : false}/> Minority option
       </P>
       {/* ))} */}
     </Card>
