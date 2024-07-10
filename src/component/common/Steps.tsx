@@ -44,10 +44,10 @@ export const ApplicationStep = ({ title, sections, activeStep }: any) => {
       <Info>Applicant can submit his/her following details:</Info>
       {/* {activeSections?.map((item:any) => ( */}
       <P>
-        <IconFormIncomplete /> Candidate's Name (As per Class 10th)
+        <IconFormIncomplete /> Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
-        <IconFormIncomplete /> Verify Candidate's Name (As per Class 10th)
+        <IconFormIncomplete /> Verify Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
         <IconFormIncomplete /> Gender

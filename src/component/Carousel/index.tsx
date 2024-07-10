@@ -1,6 +1,7 @@
  "use client"
 import { memo } from 'react'
 import { Carousel } from 'react-bootstrap'
+import Image from 'next/image'
 import styled from 'styled-components'
 
 type CarousalItem = {
@@ -24,7 +25,7 @@ const CarouselNew = memo((Props: Props) => {
             interval={4000}
             key={index}
           >
-            <img src={item.src} alt="slides" />
+            <Image src={item.src} alt="slides" />
             <Carousel.Caption className={'caption'}>
               <div>{item.caption}</div>
             </Carousel.Caption>
@@ -34,6 +35,8 @@ const CarouselNew = memo((Props: Props) => {
     </CarouselStyles>
   )
 })
+
+CarouselNew.displayName = "CarouselNew"
 
 export default CarouselNew
 

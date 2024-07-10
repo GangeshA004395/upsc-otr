@@ -278,4 +278,6 @@ const ListItemIconBox = styled(ListItemIcon)`
   }
 `;
 
+OtrInstruction.displayName = 'OtrInstruction';
+
 export default OtrInstruction;
