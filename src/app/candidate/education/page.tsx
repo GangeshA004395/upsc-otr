@@ -29,7 +29,7 @@ const EducationDetails = () => {
           borderRadius: "5px",
         }}
         xs={12}
-        md={8}
+        md={12}
         item
       >
         <Typography
@@ -46,9 +46,6 @@ const EducationDetails = () => {
         </Typography>
         <DynamicForm config={formConfig.candidateEducation} />
 
-      </Grid>
-      <Grid xs={12} md={4} item>
-        <ApplicationStep />
       </Grid>
     </Grid>
     </Container>
