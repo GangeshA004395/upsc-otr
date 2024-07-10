@@ -14,8 +14,8 @@ import { StepIconProps } from '@mui/material/StepIcon'
 import MuiCard from './MuiCard'
 
 const ColorlibStepIconRoot = styled('div')<{
-  ownerState: { completed?: boolean; active?: boolean }
-}>(({ theme, ownerState }) => ({
+  ownerstate: { completed?: boolean; active?: boolean }
+}>(({ theme, ownerstate }) => ({
   zIndex: 1,
   color: '#fff',
   width: 50,
@@ -26,7 +26,7 @@ const ColorlibStepIconRoot = styled('div')<{
   justifyContent: 'center',
   alignItems: 'center',
   backgroundColor: '#7F91C8',
-  ...(ownerState.active && {
+  ...(ownerstate.active && {
     backgroundColor: '#2947A3',
   }),
 }))
@@ -46,7 +46,7 @@ function ColorlibStepIcon(props: StepIconProps) {
 
   return (
     <ColorlibStepIconRoot
-      ownerState={{ completed, active }}
+      ownerstate={{ completed, active }}
       className={className + ' iconsbox'}
     >
       {icons[String(props.icon)]}

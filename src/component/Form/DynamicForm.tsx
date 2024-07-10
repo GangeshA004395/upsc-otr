@@ -15,6 +15,11 @@ const DynamicForm = ({ config }: any) => {
 
   const handleChange = (e: any, fieldName: any) => {
     const { value } = e.target;
+    setFormData({ ...formData, [fieldName]: value.toUpperCase() });
+  };
+
+  const handleChangeSelect = (e: any, fieldName: any) => {
+    const { value } = e.target;
     setFormData({ ...formData, [fieldName]: value });
   };
 
@@ -108,7 +113,7 @@ const DynamicForm = ({ config }: any) => {
                   select
                   //   label={field.label}
                   value={formData[fieldName] || ""}
-                  onChange={(e) => handleChange(e, fieldName)}
+                  onChange={(e) => handleChangeSelect(e, fieldName)}
                   disabled={disabled}
                   fullWidth
                   variant="outlined"
