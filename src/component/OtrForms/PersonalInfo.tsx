@@ -8,17 +8,7 @@ import DynamicForm from "../Form/DynamicForm";
 
 const PersonalInfo = () => {
   return (
-    <Grid sx={{}} container>
-      <Grid
-        sx={{
-          backgroundColor: "white",
-          padding: "20px",
-          borderRadius: "5px",
-        }}
-        xs={12}
-        md={8}
-        item
-      >
+    <>
         <Typography
           variant="h1"
           sx={{
@@ -32,12 +22,7 @@ const PersonalInfo = () => {
           Personal Details
         </Typography>
         <DynamicForm config={formConfig.candidateForm} />
-
-      </Grid>
-      <Grid xs={12} md={4} item>
-        <ApplicationStep />
-      </Grid>
-    </Grid>
+    </>
   );
 };
 
