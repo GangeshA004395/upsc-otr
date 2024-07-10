@@ -69,4 +69,6 @@ const AadharConsent = memo(
   },
 )
 
+AadharConsent.displayName="aadhar consent"
+
 export default AadharConsent
