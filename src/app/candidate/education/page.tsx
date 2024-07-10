@@ -4,7 +4,7 @@ import React from "react";
 import { ApplicationStep } from "../../../component/common/Steps";
 import formConfig from "@/app/Validation/OtrForm";
 import DynamicForm from "../../../component/Form/DynamicForm";
-import { OtrStepperCard } from "@/component/Stepper/Stepper";
+// import { OtrStepperCard } from "@/component/Stepper/Stepper";
 
 
 const EducationDetails = () => {
@@ -17,7 +17,7 @@ const EducationDetails = () => {
   >
     <Grid container>
       <Grid xs={12} md={12} item>
-        <OtrStepperCard />
+        {/* <OtrStepperCard /> */}
       </Grid>
     </Grid>
 

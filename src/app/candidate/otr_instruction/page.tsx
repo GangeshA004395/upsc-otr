@@ -32,7 +32,7 @@ import {
 // import StyledButton from "./Button";
 import AadharConsent from "@/component/common/aadhar_concent";
 import { Container } from "reactstrap";
-import { OtrStepperCard } from "@/component/Stepper/Stepper";
+// import { OtrStepperCard } from "@/component/Stepper/Stepper";
 
 const windowpath = window.location.hostname;
 const port = location.port;
@@ -147,7 +147,7 @@ const OtrInstruction = memo(() => {
     >
       <Grid container>
         <Grid xs={12} md={12} item>
-          <OtrStepperCard />
+          {/* <OtrStepperCard /> */}
         </Grid>
       </Grid>
       <OtrInst>

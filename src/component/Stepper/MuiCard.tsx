@@ -41,10 +41,12 @@ const MuiCard = memo(({ title, data, rightText, whiteHeader }: props) => {
     <MuiCardStyle whitehead={whiteHeader}>
       {title && (
         <CardHeader
-          color="primary"
+          
           title={title}
           sx={{
             textAlign: 'left!important',
+            backgroundColor:'#2947A3!important',
+            color:"white!important"
           }}
           action={rightText}
         />
