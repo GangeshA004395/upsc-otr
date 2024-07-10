@@ -44,46 +44,46 @@ export const ApplicationStep = ({ data }: any) => {
       <Info>Applicant can submit his/her following details:</Info>
       {/* {activeSections?.map((item:any) => ( */}
       <P>
-        <IconFormIncomplete success={data.candidateName ? true : false} />{" "}
+        <IconFormIncomplete success={data?.candidateName ? true : false} />{" "}
         Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
-        <IconFormIncomplete success={data.verifyCandidateName ? true : false} />{" "}
+        <IconFormIncomplete success={data?.verifyCandidateName ? true : false} />{" "}
         Verify Candidate&apos;s Name (As per Class 10th)
       </P>
       <P>
-        <IconFormIncomplete success={data.gender ? true : false} /> Gender
+        <IconFormIncomplete success={data?.gender ? true : false} /> Gender
       </P>
       <P>
-        <IconFormIncomplete success={data.verifyGender ? true : false} /> Verify
+        <IconFormIncomplete success={data?.verifyGender ? true : false} /> Verify
         Gender
       </P>
       <P>
-        <IconFormIncomplete success={data.dob ? true : false} /> Date
+        <IconFormIncomplete success={data?.dob ? true : false} /> Date
         of Birth
       </P>
       <P>
-        <IconFormIncomplete success={data.verifyDob ? true : false} />{" "}
+        <IconFormIncomplete success={data?.verifyDob ? true : false} />{" "}
         Verify Date of Birth
       </P>
       <P>
-        <IconFormIncomplete success={data.fatherName ? true : false} />
+        <IconFormIncomplete success={data?.fatherName ? true : false} />
         Father’s Name
       </P>
       <P>
-        <IconFormIncomplete success={data.verifyFatherName ? true : false}/> Verify Father’s Name
+        <IconFormIncomplete success={data?.verifyFatherName ? true : false}/> Verify Father’s Name
       </P>
       <P>
-        <IconFormIncomplete success={data.motherName ? true : false}/> Mother’s Name
+        <IconFormIncomplete success={data?.motherName ? true : false}/> Mother’s Name
       </P>
       <P>
-        <IconFormIncomplete success={data.verifyMotherName ? true : false}/> Verify Mother’s Name
+        <IconFormIncomplete success={data?.verifyMotherName ? true : false}/> Verify Mother’s Name
       </P>
       <P>
-        <IconFormIncomplete success={data.minorityStatus ? true : false}/> Minority Status
+        <IconFormIncomplete success={data?.minorityStatus ? true : false}/> Minority Status
       </P>
       <P>
-        <IconFormIncomplete success={data.minorityOption ? true : false}/> Minority option
+        <IconFormIncomplete success={data?.minorityOption ? true : false}/> Minority option
       </P>
       {/* ))} */}
     </Card>

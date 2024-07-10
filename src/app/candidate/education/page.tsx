@@ -13,15 +13,11 @@ const EducationDetails = () => {
     sx={{
       marginBottom: "20px",
     }}
-    maxWidth="lg"
+    maxWidth="xl"
   >
-    <Grid container>
-      <Grid xs={12} md={12} item>
-        {/* <OtrStepperCard /> */}
-      </Grid>
-    </Grid>
+   
 
-    <Grid sx={{}} container>
+    <Grid  xs ={12} sx={{}} container>
       <Grid
         sx={{
           backgroundColor: "white",
@@ -29,7 +25,7 @@ const EducationDetails = () => {
           borderRadius: "5px",
         }}
         xs={12}
-        md={8}
+        md={12}
         item
       >
         <Typography
@@ -47,9 +43,7 @@ const EducationDetails = () => {
         <DynamicForm config={formConfig.candidateEducation} />
 
       </Grid>
-      <Grid xs={12} md={4} item>
-        <ApplicationStep />
-      </Grid>
+      
     </Grid>
     </Container>
   );
