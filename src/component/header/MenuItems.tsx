@@ -107,4 +107,6 @@ const Menus = memo(() => {
     </MenuStyle>
   );
 });
+
+Menus.displayName = "Menus"
 export default Menus;

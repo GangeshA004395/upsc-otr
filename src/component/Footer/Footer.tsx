@@ -193,7 +193,7 @@ const Footer = memo(() => {
               <h2>Usefull Link</h2>
               <ul>
                 {footerMenu?.menu.map(({ label, to, icon }: any) => (
-                  <li>
+                  <li key={label}>
                     <Link href="/">
                       {" "}
                       <i className={`${icon} me-2`}></i>
@@ -238,5 +238,5 @@ const Footer = memo(() => {
     </FooterStyle>
   );
 });
-
+Footer.displayName = "Footer"
 export default Footer;

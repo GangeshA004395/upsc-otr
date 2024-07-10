@@ -7,12 +7,18 @@ import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { Label } from "@mui/icons-material";
+import { ApplicationStep } from "../common/Steps";
 
 const DynamicForm = ({ config }: any) => {
   const [formData, setFormData] = useState<any>({});
   const [errors, setErrors] = useState<any>({});
 
   const handleChange = (e: any, fieldName: any) => {
+    const { value } = e.target;
+    setFormData({ ...formData, [fieldName]: value.toUpperCase() });
+  };
+
+  const handleChangeSelect = (e: any, fieldName: any) => {
     const { value } = e.target;
     setFormData({ ...formData, [fieldName]: value });
   };
@@ -76,6 +82,17 @@ const DynamicForm = ({ config }: any) => {
   };
 
   return (
+    <Grid sx={{}} container>
+      <Grid
+        sx={{
+          backgroundColor: "white",
+          padding: "20px",
+          borderRadius: "5px",
+        }}
+        xs={12}
+        md={8}
+        item
+      >
     <Box component="form" onSubmit={handleSubmit} noValidate>
       <Grid container spacing={2}>
         {Object.keys(config.fields).map((fieldName, index) => {
@@ -96,7 +113,7 @@ const DynamicForm = ({ config }: any) => {
                   select
                   //   label={field.label}
                   value={formData[fieldName] || ""}
-                  onChange={(e) => handleChange(e, fieldName)}
+                  onChange={(e) => handleChangeSelect(e, fieldName)}
                   disabled={disabled}
                   fullWidth
                   variant="outlined"
@@ -137,6 +154,11 @@ const DynamicForm = ({ config }: any) => {
         Submit
       </Button>
     </Box>
+       </Grid>
+       <Grid xs={12} md={4} item>
+         <ApplicationStep data={formData}/>
+       </Grid>
+     </Grid>
   );
 };
 

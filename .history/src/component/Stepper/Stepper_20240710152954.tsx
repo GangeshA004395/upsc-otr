@@ -50,8 +50,13 @@ function ColorlibStepIcon(props: StepIconProps) {
 
   return (
     <ColorlibStepIconRoot
+<<<<<<< HEAD
+      ownerState={{ completed, active }}
+      className={className}
+=======
       ownerstate={{ completed, active }}
       className={className + ' iconsbox'}
+>>>>>>> 73e34bf8ec6b5f49ce17953520cf63b9f1183d9e
     >
       {icons[String(props.icon)]}
     </ColorlibStepIconRoot>
