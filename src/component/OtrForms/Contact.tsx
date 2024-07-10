@@ -16,7 +16,7 @@ const ContactDetails = () => {
           borderRadius: "5px",
         }}
         xs={12}
-        md={8}
+        md={12}
         item
       >
         <Typography
@@ -35,7 +35,7 @@ const ContactDetails = () => {
 
       </Grid>
       <Grid xs={12} md={4} item>
-        <ApplicationStep />
+        {/* <ApplicationStep /> */}
       </Grid>
     </Grid>
   );

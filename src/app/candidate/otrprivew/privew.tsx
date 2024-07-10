@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCell, TableHead, TableRow, Typography,Paper, } from '@mui/material';
+import { Table, TableBody, TableCell, TableHead, TableRow, Typography,Paper, Button, Link, } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -64,6 +64,13 @@ const Text = styled.div`
   font-weight: 600;
   word-wrap: break-word;
 `;
+const Text2 = styled.div`
+  color: white;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+`;
 const InstructionText = styled.div`
   color: rgba(0, 0, 0, 0.70);
   font-size: 16px;
@@ -110,6 +117,12 @@ const CustomHeader = () => {
           Confirmation of Personal Information for New Registration
           </Text>
         </TextContainer>
+        <TextContainer>
+          <Link >
+          Instructions for OTR
+          </Link>
+        </TextContainer>
+       
       </HeaderContent>
     </Container>
 
